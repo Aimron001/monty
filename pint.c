@@ -5,7 +5,7 @@
  * @count: line count
  * Return: void
 */
-void _pint(stack_t **head, unsigned int counter)
+void _pint(stack_t **head, unsigned int count)
 {
 	if (*head == NULL)
 	{

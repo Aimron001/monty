@@ -1,5 +1,4 @@
 #include "monty.h"
-bus_t bus = {NULL, NULL, NULL, 0};
 /**
 * main - a monty code interpreter
 * @argc: number of arguments
@@ -31,7 +30,7 @@ int main(int argc, char *argv[])
 	{
 		content = NULL;
 		readLine = getline(&content, &len, file);
-		bus.content = content;
+		bus.line_content = content;
 		count++;
 		if (readLine > 0)
 		{
@@ -39,7 +38,7 @@ int main(int argc, char *argv[])
 		}
 		free(content);
 	}
-	/frees stack/
+	/*frees stack*/
 	freeStack(stack);
 	fclose(file);
 return (0);

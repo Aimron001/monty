@@ -15,15 +15,15 @@ void _pchar(stack_t **head, unsigned int count)
 		fprintf(stderr, "L%d: can't pchar, stack empty\n", count);
 		fclose(bus.file);
 		free(bus.line_content);
-		free_stack(*head);
+		freeStack(*head);
 		exit(EXIT_FAILURE);
 	}
 	if (tmp->n > 127 || tmp->n < 0)
 	{
-		fprintf(stderr, "L%d: can't pchar, value out of range\n", counter);
+		fprintf(stderr, "L%d: can't pchar, value out of range\n", count);
 		fclose(bus.file);
 		free(bus.line_content);
-		free_stack(*head);
+		freeStack(*head);
 		exit(EXIT_FAILURE);
 	}
 	printf("%c\n", tmp->n);

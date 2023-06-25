@@ -9,7 +9,7 @@
 void _pstr(stack_t **head, unsigned int count)
 {
 	stack_t *tmp;
-	(void)counter;
+	(void)count;
 
 	tmp = *head;
 	while (tmp)

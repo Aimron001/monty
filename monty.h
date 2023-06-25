@@ -58,7 +58,7 @@ void _push(stack_t **head, unsigned int num);
 void _pall(stack_t **head, unsigned int num);
 void _pint(stack_t **head, unsigned int num);
 int _exec(char *content, stack_t **head, unsigned int count, FILE *file);
-void free_stack(stack_t *head);
+void freeStack(stack_t *head);
 void _pop(stack_t **head, unsigned int count);
 void _swap(stack_t **head, unsigned int count);
 void _add(stack_t **head, unsigned int count);
@@ -74,5 +74,5 @@ void _rotr(stack_t **head, __attribute__((unused)) unsigned int count);
 void add_node(stack_t **head, int val);
 void add_queue(stack_t **head, int val);
 void _queue(stack_t **head, unsigned int count);
-void _stack(stack_t **head, unsigned int count)
+void _stack(stack_t **head, unsigned int count);
 #endif
