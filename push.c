@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- * push - adds an element at the top of the stack
+ * _push - adds an element at the top of the stack
  * @head: head of the stack
  * @count: the line cont
  * Return: void
 */
-void push(stack_t **head, unsigned int count)
+void _push(stack_t **head, unsigned int count)
 {
 	int val, i = 0, f = 0;
 
