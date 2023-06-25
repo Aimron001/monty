@@ -20,13 +20,13 @@ void push(stack_t **head, unsigned int count)
 		if (f == 1)
 		{ fprintf(stderr, "L%d: usage: push integer\n", count);
 			fclose(bus.file);
-			free(bus.content);
+			free(bus.line_content);
 			free_stack(*head);
 			exit(EXIT_FAILURE); }}
 	else
 	{ fprintf(stderr, "L%d: usage: push integer\n", count);
 		fclose(bus.file);
-		free(bus.content);
+		free(bus.line_content);
 		free_stack(*head);
 		exit(EXIT_FAILURE); }
 	val = atoi(bus.arg);
